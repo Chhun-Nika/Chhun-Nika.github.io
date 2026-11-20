@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="64x64" href="/Portfolio/assets/favicon-ChMzYcxa.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-ChMzYcxa.png" />
     <title>Chhun Nika | Portfolio</title>
     <script>
       let portfolioTheme;
@@ -15,7 +15,7 @@
           ? portfolioTheme
           : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-      if (location.pathname === '/Portfolio/' && performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+      if (location.pathname === '/' && performance.getEntriesByType('navigation')[0]?.type === 'reload') {
         const restoration = history.scrollRestoration;
         history.scrollRestoration = 'manual';
         if (location.hash) {
@@ -29,8 +29,8 @@
         }, { once: true });
       }
     </script>
-    <script type="module" crossorigin src="/Portfolio/assets/index-BXl4kjP2.js"></script>
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-B9UiPwzu.css">
+    <script type="module" crossorigin src="/assets/index-DoqzMEX5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DNUETLB-.css">
   </head>
   <body>
     <div id="root"></div>
