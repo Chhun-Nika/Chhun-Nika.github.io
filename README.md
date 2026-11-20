@@ -24,7 +24,3 @@ npm run preview  # Preview the production build locally
 ```
 
 Open the local URL printed by Vite. Each card under Selected Projects opens a `/projects/:slug` route, such as `/projects/modula-pos`. Edit the card summaries and detail copy in `src/data/projects.ts`.
-
-## Decisions for later
-
-The starting preferences are a pure white canvas, rounded elements, expressive typography, and a portrait-led introduction. We’ll decide the layout, typefaces, palette, and motion together. We’ll also choose the portrait and project evidence and write the introduction, project descriptions, experience, volunteer work, achievements, CV, and contact details.
