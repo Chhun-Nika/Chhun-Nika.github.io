@@ -15,7 +15,7 @@
           ? portfolioTheme
           : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-      if (location.pathname === '/' && performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+      if (location.pathname === '%BASE_URL%' && performance.getEntriesByType('navigation')[0]?.type === 'reload') {
         const restoration = history.scrollRestoration;
         history.scrollRestoration = 'manual';
         if (location.hash) {
