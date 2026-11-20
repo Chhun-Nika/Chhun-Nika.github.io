@@ -162,8 +162,11 @@ function HomePage({ onSectionChange }: { onSectionChange: SectionChange }) {
               </h1>
               <p className="hero-focus">Software Engineer</p>
               <p className="hero-intro">
-                I take web and mobile ideas from prototype to product, designing
-                the interfaces people use and building the systems that power them.
+                I'm a Software Engineer driven by curiosity and a passion for
+                architecting scalable, reliable, and high-performance software
+                systems. I focus on bridging thoughtful system design, modern
+                technologies, and seamless user experiences to build robust
+                solutions that solve real-world problems.
               </p>
               <div className="hero-actions">
                 <Link className="hero-cta" to="/#projects">View Projects</Link>
