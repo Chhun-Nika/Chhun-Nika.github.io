@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/Portfolio/assets/favicon-ChMzYcxa.png" />
+    <title>Chhun Nika | Portfolio</title>
+    <script>
+      let portfolioTheme;
+      try {
+        portfolioTheme = localStorage.getItem('portfolio-theme');
+      } catch {}
+      document.documentElement.dataset.theme =
+        portfolioTheme === 'light' || portfolioTheme === 'dark'
+          ? portfolioTheme
+          : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      if (location.pathname === '/Portfolio/' && performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+        const restoration = history.scrollRestoration;
+        history.scrollRestoration = 'manual';
+        if (location.hash) {
+          history.replaceState(history.state, '', location.pathname + location.search);
+        }
+        window.addEventListener('pageshow', () => {
+          requestAnimationFrame(() => {
+            window.scrollTo(0, 0);
+            history.scrollRestoration = restoration;
+          });
+        }, { once: true });
+      }
+    </script>
+    <script type="module" crossorigin src="/Portfolio/assets/index-BXl4kjP2.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-B9UiPwzu.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
